@@ -1,7 +1,7 @@
 {
   "name": "restapi-and-mongoose",
   "version": "1.0.0",
-  "description": "This is part of the NODEJS udemy course",
+  "description": "This is an idea of an app that will give to the user the ability to create and manage their task in the same way that a note works.",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
