@@ -1,0 +1,31 @@
+### Create User
+POST http://127.0.0.1:3000/users
+Content-Type: application/json
+
+{
+    "name": "Oldemar",
+    "email": "oldemego@email.com",
+    "password": "SamplePasswod0189",
+    "age": 22
+}
+
+### Get All User
+GET http://127.0.0.1:3000/users
+Accept: application/json
+
+### Get One User
+GET http://127.0.0.1:3000/users/659af4dc7c302e3e83b6c730
+Accept: application/json
+
+### Update One User
+PATCH http://127.0.0.1:3000/users/659af4dc7c302e3e83b6c730
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": " Oldemar Jesus "
+}
+
+### Delete One User
+DELETE http://127.0.0.1:3000/users/659af4dc7c302e3e83b6c730
+Accept: application/json

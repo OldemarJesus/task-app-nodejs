@@ -1,0 +1,29 @@
+### Create Task
+POST http://127.0.0.1:3000/tasks
+Content-Type: application/json
+
+{
+    "description": "Learn JS",
+    "completed": true
+}
+
+### Get All Task
+GET http://127.0.0.1:3000/tasks
+Accept: application/json
+
+### Get One Tasks
+GET http://127.0.0.1:3000/tasks/659af5731014b551bea1732f
+Accept: application/json
+
+### Update One Task
+PATCH http://127.0.0.1:3000/tasks/659af5731014b551bea1732f
+Accept: application/json
+Content-Type: application/json
+
+{
+    "completed": false
+}
+
+### Delete One Task
+DELETE  http://127.0.0.1:3000/tasks/659af5731014b551bea1732f
+Accept: application/json
