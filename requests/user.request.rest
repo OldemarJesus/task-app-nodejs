@@ -18,12 +18,13 @@ GET http://127.0.0.1:3000/users/659af4dc7c302e3e83b6c730
 Accept: application/json
 
 ### Update One User
-PATCH http://127.0.0.1:3000/users/659af4dc7c302e3e83b6c730
+PATCH http://127.0.0.1:3000/users/659c8c895a9f6e8bfeebd6a8
 Accept: application/json
 Content-Type: application/json
 
 {
-    "name": " Oldemar Jesus "
+    "name": " Oldemar Jesus ",
+    "password": "Teste1234"
 }
 
 ### Delete One User
