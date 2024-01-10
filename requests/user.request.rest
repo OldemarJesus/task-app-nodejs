@@ -9,16 +9,17 @@ Content-Type: application/json
     "age": 22
 }
 
-### Get All User
-GET http://127.0.0.1:3000/users
+### Get Profile
+GET http://127.0.0.1:3000/users/me
 Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZWUyNmQwZTc2Y2MzZDBkZGI0N2IiLCJpYXQiOjE3MDQ5MTY4NjV9.YcKkFlHyqAFdDP4X4Y3G8kFcmEDeyUwubA5WsW_I6hA
 
 ### Get One User
-GET http://127.0.0.1:3000/users/659af4dc7c302e3e83b6c730
+GET http://127.0.0.1:3000/users/659eee26d0e76cc3d0ddb47b
 Accept: application/json
 
 ### Update One User
-PATCH http://127.0.0.1:3000/users/659c8c895a9f6e8bfeebd6a8
+PATCH http://127.0.0.1:3000/users/659eee26d0e76cc3d0ddb47b
 Accept: application/json
 Content-Type: application/json
 
@@ -33,9 +34,19 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "email": "oldemego@email.com",
-    "password": "SamplePasswod0189"
+    "email": "clemir@email.com",
+    "password": "Teste1234"
 }
+
+### Logout
+POST http://127.0.0.1:3000/users/logout
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZWUyNmQwZTc2Y2MzZDBkZGI0N2IiLCJpYXQiOjE3MDQ5MTY3Njl9.Cssl_ufkgi2f_ly4-TrzWlpyGzkq0oZWzbRl36wLAvQ
+
+### Logout All
+POST http://127.0.0.1:3000/users/logout/all
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZWUyNmQwZTc2Y2MzZDBkZGI0N2IiLCJpYXQiOjE3MDQ5MTUwNjh9.iQGsyy2_ZOt2V_ml2LBuCGXgjmOBcX3vZ7wiNOVQ_-U
 
 ### Delete One User
 DELETE http://127.0.0.1:3000/users/659c8d353ad319a96e1a6321
