@@ -1,29 +1,34 @@
 ### Create Task
 POST http://127.0.0.1:3000/tasks
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
 
 {
     "description": "Learn JS",
-    "completed": true
+    "completed": false
 }
 
 ### Get All Task
 GET http://127.0.0.1:3000/tasks
 Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
 
 ### Get One Tasks
-GET http://127.0.0.1:3000/tasks/659af5731014b551bea1732f
+GET http://127.0.0.1:3000/tasks/659f075f945025bc867effe6
 Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
 
 ### Update One Task
-PATCH http://127.0.0.1:3000/tasks/659af5731014b551bea1732f
+PATCH http://127.0.0.1:3000/tasks/659f075f945025bc867effe6
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
 
 {
     "completed": false
 }
 
 ### Delete One Task
-DELETE  http://127.0.0.1:3000/tasks/659af5731014b551bea1732f
+DELETE  http://127.0.0.1:3000/tasks/659f075f945025bc867effe6
 Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw

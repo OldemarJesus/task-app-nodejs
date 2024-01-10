@@ -3,8 +3,8 @@ POST http://127.0.0.1:3000/users
 Content-Type: application/json
 
 {
-    "name": "Clemir",
-    "email": "clemir@email.com",
+    "name": "Oldemar Jesus",
+    "email": "oldemar@email.com",
     "password": "SamplePasswod0189",
     "age": 22
 }
@@ -12,13 +12,13 @@ Content-Type: application/json
 ### Get Profile
 GET http://127.0.0.1:3000/users/me
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZWUyNmQwZTc2Y2MzZDBkZGI0N2IiLCJpYXQiOjE3MDQ5MTczNDV9.oJ4uc6b58hY_hTUF9GiZvJJlbHJlY9W5LEO2rqdvMzY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
 
 ### Update One User
 PATCH http://127.0.0.1:3000/users/me
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZmNkNjA3NDhiZTdkNTIzYjJmMDkiLCJpYXQiOjE3MDQ5MTgyMzB9.r9IG1Cbk7n3Tv2sZHBU60sS4pRGu0qIiZasgSzk0l9M
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
 
 {
     "name": " Oldemar Jesus "
@@ -27,7 +27,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZmNkN
 ### Delete One User
 DELETE http://127.0.0.1:3000/users/me
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZWUyNmQwZTc2Y2MzZDBkZGI0N2IiLCJpYXQiOjE3MDQ5MTczNDV9.oJ4uc6b58hY_hTUF9GiZvJJlbHJlY9W5LEO2rqdvMzY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
 
 ### Login
 POST http://127.0.0.1:3000/users/login
@@ -42,9 +42,9 @@ Content-Type: application/json
 ### Logout
 POST http://127.0.0.1:3000/users/logout
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZWUyNmQwZTc2Y2MzZDBkZGI0N2IiLCJpYXQiOjE3MDQ5MTY3Njl9.Cssl_ufkgi2f_ly4-TrzWlpyGzkq0oZWzbRl36wLAvQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
 
 ### Logout All
 POST http://127.0.0.1:3000/users/logout/all
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTllZmNkNjA3NDhiZTdkNTIzYjJmMDkiLCJpYXQiOjE3MDQ5MTg0Mzd9.7aZ_Ay_QUAdcF7IFLf3AfGs5B4oph2ebJooDhoRXJwI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
