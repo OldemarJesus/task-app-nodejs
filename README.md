@@ -27,7 +27,7 @@ For this app we use the following technology:
 ***Required Headers***
 |   Header          |   Example
 |   -----           |   -----
-|   Authorization   |   Bearer <token>
+|   Authorization   |   Bearer \<token\>
 
 Note:
 This required header does not apply to endpoint POST /users
