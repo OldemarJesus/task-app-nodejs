@@ -3,8 +3,8 @@ POST http://127.0.0.1:3000/users
 Content-Type: application/json
 
 {
-    "name": "Oldemar Jesus",
-    "email": "oldemar@email.com",
+    "name": "Clemir Jesus",
+    "email": "clemir@email.com",
     "password": "SamplePasswod0189",
     "age": 22
 }
@@ -12,7 +12,7 @@ Content-Type: application/json
 ### Get Profile
 GET http://127.0.0.1:3000/users/me
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMDZiZTcxNDg1OTk2N2QwMjEyZjQiLCJpYXQiOjE3MDQ5MjA3NjZ9.mTTBGW0NnyfyAETKpp21cMxtfGaJnjp0GEOa52Exsxw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMGNhMWIyY2JjYzkyNWVhY2E2YWIiLCJpYXQiOjE3MDQ5MjIyNzN9.Rtu7fSdIkQu447gVKV50EbOmNSgwGTNUf0Y5ck0QA6I
 
 ### Update One User
 PATCH http://127.0.0.1:3000/users/me
