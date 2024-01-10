@@ -14,17 +14,27 @@ For this app we use the following technology:
 
 **User End-Points**
 
-| Path | Method | Description
-|------|--------|------------
-|/user | GET | Retrieve all registed users
-|/user | POST | Register new user
-|/user/:id| GET | Retrieve one user by ID
-|/user/:id| PATCH | Update one user by ID
-|/user/:id| DELETE | Delete one user by ID
+|   Path                |   Method  |   Description
+|   ------              |   ------  |   ------
+|   /users/login        |   POST    |   Login in the system
+|   /users/logout       |   POST    |   Logout in the system with the provided token
+|   /users/logout/all   |   POST    |   Logout in the system with the provided token
+|   /users              |   POST    |   Register new user
+|   /users/me           |   GET     |   Retrieve authenticated user profile
+|   /users/me           |   PATCH   |   Update authenticated user data
+|   /users/me           |   DELETE  |   Delete authenticated user
+
+***Required Headers***
+|   Header          |   Example
+|   -----           |   -----
+|   Authorization   |   Bearer <token>
+
+Note:
+This required header does not apply to endpoint POST /users
 
 Example of user structure:
 
-```json
+```js
 {
     "name": String,
     "email": String,
@@ -35,17 +45,23 @@ Example of user structure:
 
 **Task End-Points**
 
-| Path | Method | Description
-|------|--------|------------
-|/task | GET | Retrieve all registed tasks
-|/task | POST | Register new task
-|/task/:id| GET | Retrieve one task by ID
-|/task/:id| PATCH | Update one task by ID
-|/task/:id| DELETE | Delete one task by ID
+|   Path        |   Method  |   Description
+|   ------      |   ------  |   ------
+|   /task       |   GET     |   Retrieve all registed tasks associated with authenticated user
+|   /task       |   POST    |   Register new task associated with authenticated user
+|   /task/:id   |   GET     |   Retrieve one task by ID associated with authenticated user
+|   /task/:id   |   PATCH   |   Update one task by ID associated with authenticated user
+|   /task/:id   |   DELETE  |   Delete one task by ID associated with authenticated user
+
+***Required Headers***
+|   Header          |   Example
+|   -----           |   -----
+|   Authorization   |   Bearer <token>
+
 
 Example of task structure:
 
-```json
+```js
 {
     "description": String,
     "completed": Boolean
