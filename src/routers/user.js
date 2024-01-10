@@ -2,6 +2,7 @@ const express = require('express')
 const auth = require('../middleware/auth')
 const router = new express.Router()
 const User = require('../models/user')
+const Task = require('../models/task')
 
 //
 // User Endpoint
@@ -44,7 +45,7 @@ router.patch('/users/me', auth, async (req, res) => {
             req.user[property] = req.body[property]
         })
 
-        await req.user.save()
+        await req.user.save({isNew: false})
 
         res.status(200).send(req.user)
     } catch (e) {
@@ -58,6 +59,7 @@ router.delete('/users/me', auth, async (req, res) => {
         await req.user.deleteOne()
         res.status(200).send(req.user)
     } catch (e) {
+        console.log(e)
         res.status(500).send()
     }
 })
