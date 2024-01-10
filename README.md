@@ -56,7 +56,7 @@ Example of user structure:
 ***Required Headers***
 |   Header          |   Example
 |   -----           |   -----
-|   Authorization   |   Bearer <token>
+|   Authorization   |   Bearer \<token\>
 
 
 Example of task structure:
