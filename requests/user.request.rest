@@ -3,8 +3,8 @@ POST http://127.0.0.1:3000/users
 Content-Type: application/json
 
 {
-    "name": "Oldemar",
-    "email": "oldemego@email.com",
+    "name": "Clemir",
+    "email": "clemir@email.com",
     "password": "SamplePasswod0189",
     "age": 22
 }
@@ -27,6 +27,16 @@ Content-Type: application/json
     "password": "Teste1234"
 }
 
+### Login
+POST http://127.0.0.1:3000/users/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "oldemego@email.com",
+    "password": "SamplePasswod0189"
+}
+
 ### Delete One User
-DELETE http://127.0.0.1:3000/users/659af4dc7c302e3e83b6c730
+DELETE http://127.0.0.1:3000/users/659c8d353ad319a96e1a6321
 Accept: application/json
