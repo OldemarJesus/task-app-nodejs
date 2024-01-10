@@ -20,7 +20,7 @@ router.post('/users', async (req, res) => {
     }
 })
 
-// get all user
+// get user profile
 router.get('/users/me', auth, async (req, res) => {
     try {
         res.status(200).send(req.user)
@@ -29,63 +29,34 @@ router.get('/users/me', auth, async (req, res) => {
     }
 })
 
-// get one user
-router.get('/users/:id', async (req, res) => {
-    const _id = req.params.id
-
-    try {
-        const user = await User.findById(_id)
-
-        if (!user) {
-            return res.status(404).send()
-        }
-
-        res.status(200).send(user)
-    } catch (err) {
-        res.status(500).send()
-    }
-})
-
 // update one user
-router.patch('/users/:id', async (req, res) => {
-    const validUserProperties = ["name", "email", "password", "age"]
-    const updateProperties = Object.keys(req.body)
-    const isValidUpdateProperties = updateProperties.every((property) => validUserProperties.includes(property))
-
-    if (!isValidUpdateProperties) {
-        return res.status(400).send({ error: 'Ivalid update properties!' })
-    }
-
+router.patch('/users/me', auth, async (req, res) => {
     try {
-        const user = await User.findById(req.params.id)
+        const validUserProperties = ["name", "email", "password", "age"]
+        const updateProperties = Object.keys(req.body)
+        const isValidUpdateProperties = updateProperties.every((property) => validUserProperties.includes(property))
+
+        if (!isValidUpdateProperties) {
+            return res.status(400).send({ error: 'Ivalid update properties!' })
+        }
 
         updateProperties.forEach((property) => {
-            user[property] = req.body[property]
+            req.user[property] = req.body[property]
         })
-        await user.save()
 
-        if (!user) {
-            return res.status(404).send()
-        }
+        await req.user.save()
 
-        res.status(200).send(user)
+        res.status(200).send(req.user)
     } catch (e) {
-        res.status(400).send(e)
+        res.status(400).send()
     }
 })
 
 // delete one user
-router.delete('/users/:id', async (req, res) => {
-    const _id = req.params.id
-
+router.delete('/users/me', auth, async (req, res) => {
     try {
-        const user = await User.findByIdAndDelete(_id)
-
-        if (!user) {
-            return res.status(404).send()
-        }
-
-        res.status(200).send(user)
+        await req.user.deleteOne()
+        res.status(200).send(req.user)
     } catch (e) {
         res.status(500).send()
     }
