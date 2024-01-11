@@ -12,7 +12,7 @@ Content-Type: application/json
 ### Get Profile
 GET http://127.0.0.1:3000/users/me
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMTViNmFmN2UyNTk0NzExZjMyNmMiLCJpYXQiOjE3MDQ5MjQ1OTh9.Vs_biSxWBP08jK_7TmynCUu7JVmaKJV7dvdBY15LFFM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWEwNjllNTVmZTdjOGIxOTdiM2E3ODYiLCJpYXQiOjE3MDUwMTE2ODV9.sb8BPyFxtJH9ydUmXZxUAYzVzvb_qr_MxVeotPTO8tM
 
 ### Update One User
 PATCH http://127.0.0.1:3000/users/me
@@ -35,7 +35,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "email": "clemir@email.com",
+    "email": "oldemar@email.com",
     "password": "SamplePasswod0189"
 }
 
