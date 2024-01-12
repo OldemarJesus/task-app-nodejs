@@ -16,13 +16,14 @@ For this app we use the following technology:
 
 |   Path                |   Method  |   Description
 |   ------              |   ------  |   ------
-|   /users/login        |   POST    |   Login in the system
+|   /users/login        |   POST    |   Login in the system where the auth token is retrieved
 |   /users/logout       |   POST    |   Logout in the system with the provided token
 |   /users/logout/all   |   POST    |   Logout in the system with the provided token
 |   /users              |   POST    |   Register new user
 |   /users/me           |   GET     |   Retrieve authenticated user profile
 |   /users/me           |   PATCH   |   Update authenticated user data
 |   /users/me           |   DELETE  |   Delete authenticated user
+|   /users/:id/avatar   |   GET     |   Retrieve the user profile image by user id
 
 ***Required Headers***
 |   Header          |   Example
@@ -47,7 +48,7 @@ Example of user structure:
 
 |   Path        |   Method  |   Description
 |   ------      |   ------  |   ------
-|   /task       |   GET     |   Retrieve all registed tasks associated with authenticated user
+|   /task       |   GET     |   Retrieve all registed tasks and makes able to filter out associated with authenticated user
 |   /task       |   POST    |   Register new task associated with authenticated user
 |   /task/:id   |   GET     |   Retrieve one task by ID associated with authenticated user
 |   /task/:id   |   PATCH   |   Update one task by ID associated with authenticated user
