@@ -1,17 +1,17 @@
 ### Create Task
 POST http://127.0.0.1:3000/tasks
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMTdmM2VhNThiMTkyZThhNWVjNTciLCJpYXQiOjE3MDQ5MjUxNzF9.joaHEjbo2ZJXlDEZVjfSilVETNSFVjgJcyi2r8NZtEQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWExYTBmOWQ1YmUzZTdhZWRkZWYwMDMiLCJpYXQiOjE3MDUwOTEzMjJ9.loa4PeW6kGcPukm2h7mndqSw4sg9LmTEDfTsfn4V7RA
 
 {
-    "description": "Task 2 a",
+    "description": "Task 5",
     "completed": false
 }
 
 ### Get All Task
-GET http://127.0.0.1:3000/tasks
+GET http://127.0.0.1:3000/tasks?sort=description:desc&limit=2&completed=true
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMTViNmFmN2UyNTk0NzExZjMyNmMiLCJpYXQiOjE3MDQ5MjQ1OTh9.Vs_biSxWBP08jK_7TmynCUu7JVmaKJV7dvdBY15LFFM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWExYTBmOWQ1YmUzZTdhZWRkZWYwMDMiLCJpYXQiOjE3MDUwOTEzMjJ9.loa4PeW6kGcPukm2h7mndqSw4sg9LmTEDfTsfn4V7RA
 
 ### Get One Tasks
 GET http://127.0.0.1:3000/tasks/659f0ce6b2cbcc925eaca6be

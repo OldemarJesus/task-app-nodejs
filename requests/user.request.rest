@@ -12,7 +12,7 @@ Content-Type: application/json
 ### Get Profile
 GET http://127.0.0.1:3000/users/me
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWEwNjllNTVmZTdjOGIxOTdiM2E3ODYiLCJpYXQiOjE3MDUwMTE2ODV9.sb8BPyFxtJH9ydUmXZxUAYzVzvb_qr_MxVeotPTO8tM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWExYTBmOWQ1YmUzZTdhZWRkZWYwMDMiLCJpYXQiOjE3MDUwOTEzMjJ9.loa4PeW6kGcPukm2h7mndqSw4sg9LmTEDfTsfn4V7RA
 
 ### Update One User
 PATCH http://127.0.0.1:3000/users/me
