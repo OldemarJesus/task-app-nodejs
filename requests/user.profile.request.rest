@@ -1,16 +1,16 @@
 ### Upload User Profile Picture
 POST http://localhost:3000/users/me/avatar
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWEwNjllNTVmZTdjOGIxOTdiM2E3ODYiLCJpYXQiOjE3MDUwMTE2ODV9.sb8BPyFxtJH9ydUmXZxUAYzVzvb_qr_MxVeotPTO8tM
+Authorization: Bearer <token here>
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="avatar"; filename="profile-pic.jpg"
 Content-Type: image/jpeg
 
-< /home/oldemar/project/udemy/nodejs-course/node-course-images/profile-pic.jpg
+< <image full path>
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 ### Delete User Profile Picture
 DELETE http://localhost:3000/users/me/avatar
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWEwNjllNTVmZTdjOGIxOTdiM2E3ODYiLCJpYXQiOjE3MDUwMTE2ODV9.sb8BPyFxtJH9ydUmXZxUAYzVzvb_qr_MxVeotPTO8tM
+Authorization: Bearer <token here>

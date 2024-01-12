@@ -3,31 +3,31 @@ POST http://127.0.0.1:3000/users
 Content-Type: application/json
 
 {
-    "name": "Oldemar Jesus",
-    "email": "oldemar@email.com",
-    "password": "SamplePasswod0189",
-    "age": 22
+    "name": "Example User",
+    "email": "example@user.test",
+    "password": "DummyPassphare",
+    "age": 43
 }
 
 ### Get Profile
 GET http://127.0.0.1:3000/users/me
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWExYTBmOWQ1YmUzZTdhZWRkZWYwMDMiLCJpYXQiOjE3MDUwOTEzMjJ9.loa4PeW6kGcPukm2h7mndqSw4sg9LmTEDfTsfn4V7RA
+Authorization: Bearer <token here>
 
 ### Update One User
 PATCH http://127.0.0.1:3000/users/me
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMTE5YzQzZDNjNjdkZTNjZWE4MzkiLCJpYXQiOjE3MDQ5MjM1NDh9.pRQIr6fnbqq9m2zItqWGKI9wDHc8sZN_iQWfDaUC2Fg
+Authorization: Bearer <token here>
 
 {
-    "name": " Oldemar Jesus "
+    "name": " Example Another Name "
 }
 
 ### Delete One User
 DELETE http://127.0.0.1:3000/users/me
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMTgwYWVhNThiMTkyZThhNWVjNWIiLCJpYXQiOjE3MDQ5MjUxOTR9.3bGFhZJCnKcNGd5qtcfrCk8Qv_UlzJs7HzafuKcpHUI
+Authorization: Bearer <token here>
 
 ### Login
 POST http://127.0.0.1:3000/users/login
@@ -35,16 +35,16 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "email": "oldemar@email.com",
-    "password": "SamplePasswod0189"
+    "email": "example@user.test",
+    "password": "DummyPassphare"
 }
 
 ### Logout
 POST http://127.0.0.1:3000/users/logout
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMTViNmFmN2UyNTk0NzExZjMyNmMiLCJpYXQiOjE3MDQ5MjQ1OTh9.Vs_biSxWBP08jK_7TmynCUu7JVmaKJV7dvdBY15LFFM
+Authorization: Bearer <token here>
 
 ### Logout All
 POST http://127.0.0.1:3000/users/logout/all
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTlmMTViNmFmN2UyNTk0NzExZjMyNmMiLCJpYXQiOjE3MDQ5MjQ1OTh9.Vs_biSxWBP08jK_7TmynCUu7JVmaKJV7dvdBY15LFFM
+Authorization: Bearer <token here>
